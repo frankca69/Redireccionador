@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP Grupo2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .message {
+            text-align: center;
+        }
+        .loader {
+            margin: 20px auto;
+            border: 8px solid #f0f0f0;
+            border-radius: 50%;
+            border-top: 8px solid #3498db;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Espera 3 segundos antes de redireccionar
+            setTimeout(function() {
+                window.location.href = "https://9650-2001-1388-a44-d503-c869-f4f0-1f3b-4408.ngrok-free.app/";
+            }, 3000); // 3000 milisegundos = 3 segundos
+        });
+    </script>
+</head>
+<body>
+    <div class="message">
+        <h1>Abriendo Panel de Trabajo</h1>
+        <h2>Sistemas Distribuidos Grupo 2</h2>
+        <div class="loader"></div>
+        <p>Si abre, haz clic <a href="https://9650-2001-1388-a44-d503-c869-f4f0-1f3b-4408.ngrok-free.app/">aquí</a>.</p>
+    </div>
+</body>
+</html>
